@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; /* Light grey background */
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: #dc3545; /* Bootstrap red */
+    margin: 10px 0;
+}
+
+.header-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page:not(.hidden) {
+    display: block;
+}
+
+.login-container {
+    background-color: #ffffff; /* White for the login container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #dc3545; /* Bootstrap red */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+footer {
+    margin-top: 20px;
+    color: #dc3545; /* Bootstrap red */
+    font-size: 14px;
+}
+
+.card {
+    background-color: #ffffff; /* White for the cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 90%;
+}
+
+.card h2 {
+    color: #28a745; /* Green for card headings */
+    margin: 10px 0;
+}
+
+.card a {
+    color: #007bff; /* Bootstrap blue for links */
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.qr-code {
+    max-width: 80px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-link {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .video-section table,
+    .video-section th,
+    .video-section td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .qr-code {
+        max-width: 50px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; /* Light grey background */
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: #dc3545; /* Bootstrap red */
+    margin: 10px 0;
+}
+
+.header-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page:not(.hidden) {
+    display: block;
+}
+
+.login-container {
+    background-color: #ffffff; /* White for the login container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #dc3545; /* Bootstrap red */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+footer {
+    margin-top: 20px;
+    color: #dc3545; /* Bootstrap red */
+    font-size: 14px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 15px; /* Space between cards */
+}
+
+.card {
+    background-color: #ffffff; /* White for the cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    max-width: 300px;
+    flex: 1 1 calc(45% - 20px); /* Responsive card size */
+}
+
+.card h2 {
+    color: #28a745; /* Green for card headings */
+    margin: 10px 0;
+}
+
+.card a {
+    color: #007bff; /* Bootstrap blue for links */
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #e2e6ea; /* Light background for links */
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #d6d8db; /* Darker background on hover */
+}
+
+.qr-code {
+    max-width: 80px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.video-section,
+.game-5s-section {
+    margin-top: 20px;
+}
+
+.video-section h2,
+.game-5s-section h2 {
+    color: #5a5a5a; /* Dark grey for subsection headings */
+    margin-top: 20px;
+}
+
+.game-link {
+    display: inline-block;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* Full width cards on smaller screens */
+    }
+
+    .header-image {
+        max-width: 70%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Login & Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Page de connexion -->
+    <div id="login-page" class="page">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQimTQplX7Kt50BLRPCc8pRU1Ic1EZDPOKQ&s" alt="Logo Audit" class="header-image">
+        <div class="login-container">
+            <h1>Connexion</h1>
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" placeholder="Nom d'utilisateur" aria-label="Nom d'utilisateur" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" placeholder="Mot de passe" aria-label="Mot de passe" required>
+            <button onclick="login()">Se connecter</button>
+            <p id="error-message" class="error-message hidden">Nom d'utilisateur ou mot de passe incorrect</p>
+        </div>
+        <footer>© 2024 Audit Department</footer>
+    </div>
+
+    <!-- Page des liens d'audit -->
+    <div id="audit-links-page" class="page hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQimTQplX7Kt50BLRPCc8pRU1Ic1EZDPOKQ&s" alt="Logo Audit" class="header-image">
+
+        <h1>Liens d'Audit</h1>
+        <div class="card-container">
+            <div class="card">
+                <h2>Audit 5S</h2>
+                <a href="https://forms.office.com/e/YNkFgkXXhn" class="audit-link" target="_blank">Accéder au formulaire</a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://forms.office.com/e/YNkFgkXXhn&size=100x100" alt="QR Code Audit 5S" class="qr-code">
+            </div>
+            <div class="card">
+                <h2>Audit Gemba OJT</h2>
+                <a href="https://forms.office.com/e/1nWmJsVRNb" class="audit-link" target="_blank">Accéder au formulaire</a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://forms.office.com/e/1nWmJsVRNb&size=100x100" alt="QR Code Audit Gemba OJT" class="qr-code">
+            </div>
+            <div class="card">
+                <h2>Audit Gemba OJT Magasin</h2>
+                <a href="https://forms.office.com/e/Ps1y5HpJ8u" class="audit-link" target="_blank">Accéder au formulaire</a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://forms.office.com/e/Ps1y5HpJ8u&size=100x100" alt="QR Code Audit Gemba OJT Magasin" class="qr-code">
+            </div>
+            <div class="card">
+                <h2>Audit Gemba OJT Mur Qualité</h2>
+                <a href="https://forms.office.com/e/0nhbJYckHs" class="audit-link" target="_blank">Accéder au formulaire</a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://forms.office.com/e/0nhbJYckHs&size=100x100" alt="QR Code Audit Gemba OJT Mur Qualité" class="qr-code">
+            </div>
+        </div>
+
+        <!-- KW Video Instruction Links -->
+        <div class="video-section">
+            <h1>WKW Video Instruction Links</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>F83</h2>
+                    <a href="https://youtu.be/pE_ptDrpPDM?feature=shared" target="_blank">Watch here</a>
+                </div>
+                <div class="card">
+                    <h2>Instruction de Contrôle 100% F6X</h2>
+                    <a href="https://youtu.be/ni5AtO-92YE?feature=shared" target="_blank">Watch here</a>
+                </div>
+                <div class="card">
+                    <h2>Instruction de Nettoyage Press Injection</h2>
+                    <a href="https://youtu.be/finG5RcRS1w?feature=shared" target="_blank">Watch here</a>
+                </div>
+                <div class="card">
+                    <h2>Tri Sélectif</h2>
+                    <a href="https://youtu.be/BweHTgi-L_Y?feature=shared" target="_blank">Watch here</a>
+                </div>
+                <div class="card">
+                    <h2>5S</h2>
+                    <a href="https://youtu.be/ntKqMhbqTII?feature=shared" target="_blank">Watch here</a>
+                </div>
+                <div class="card">
+                    <h2>Idée d'Amélioration</h2>
+                    <a href="https://youtu.be/PlZpe_P7OU8?feature=shared" target="_blank">Watch here</a>
+                </div>
+                <div class="card">
+                    <h2>Amélioration Continue 2023</h2>
+                    <a href="https://youtu.be/u-gY6HmCir4?feature=shared" target="_blank">Watch here</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game 5S Section -->
+        <div class="game-5s-section">
+            <h1>Game 5S</h1>
+            <p>Challenge yourself</p>
+            <a href="http://192.168.26.6/LeanWKW/Cinqsgames" class="game-link" target="_blank">
+                <button>Accéder au Jeu 5S</button>
+            </a>
+        </div>
+
+        <button onclick="logout()">Se déconnecter</button>
+        <footer>© 2024 Audit WKW Department</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
